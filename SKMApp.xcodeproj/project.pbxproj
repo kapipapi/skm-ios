@@ -11,6 +11,9 @@
 		E7D5B9652B52A691003EC786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9642B52A691003EC786 /* ContentView.swift */; };
 		E7D5B9672B52A692003EC786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D5B9662B52A692003EC786 /* Assets.xcassets */; };
 		E7D5B96A2B52A692003EC786 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D5B9692B52A692003EC786 /* Preview Assets.xcassets */; };
+		E7D5B9712B52B13A003EC786 /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9702B52B13A003EC786 /* RoutesView.swift */; };
+		E7D5B9732B52B456003EC786 /* StopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9722B52B456003EC786 /* StopsView.swift */; };
+		E7D5B9752B52B680003EC786 /* TimetableForStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9742B52B680003EC786 /* TimetableForStop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E7D5B9642B52A691003EC786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7D5B9662B52A692003EC786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7D5B9692B52A692003EC786 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7D5B9702B52B13A003EC786 /* RoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesView.swift; sourceTree = "<group>"; };
+		E7D5B9722B52B456003EC786 /* StopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsView.swift; sourceTree = "<group>"; };
+		E7D5B9742B52B680003EC786 /* TimetableForStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableForStop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,8 @@
 		E7D5B9562B52A691003EC786 = {
 			isa = PBXGroup;
 			children = (
+				E7D5B9742B52B680003EC786 /* TimetableForStop.swift */,
+				E7D5B9722B52B456003EC786 /* StopsView.swift */,
 				E7D5B9612B52A691003EC786 /* SKMApp */,
 				E7D5B9602B52A691003EC786 /* Products */,
 			);
@@ -55,6 +63,7 @@
 				E7D5B9642B52A691003EC786 /* ContentView.swift */,
 				E7D5B9662B52A692003EC786 /* Assets.xcassets */,
 				E7D5B9682B52A692003EC786 /* Preview Content */,
+				E7D5B9702B52B13A003EC786 /* RoutesView.swift */,
 			);
 			path = SKMApp;
 			sourceTree = "<group>";
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7D5B9652B52A691003EC786 /* ContentView.swift in Sources */,
+				E7D5B9752B52B680003EC786 /* TimetableForStop.swift in Sources */,
+				E7D5B9712B52B13A003EC786 /* RoutesView.swift in Sources */,
+				E7D5B9732B52B456003EC786 /* StopsView.swift in Sources */,
 				E7D5B9632B52A691003EC786 /* SKMAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +217,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -260,6 +273,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
