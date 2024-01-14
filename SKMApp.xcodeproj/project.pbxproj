@@ -14,7 +14,42 @@
 		E7D5B9712B52B13A003EC786 /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9702B52B13A003EC786 /* RoutesView.swift */; };
 		E7D5B9732B52B456003EC786 /* StopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9722B52B456003EC786 /* StopsView.swift */; };
 		E7D5B9752B52B680003EC786 /* TimetableForStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9742B52B680003EC786 /* TimetableForStop.swift */; };
+		E7D5B9772B52BF09003EC786 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9762B52BF09003EC786 /* LocationManager.swift */; };
+		E7D5B97F2B544E29003EC786 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D5B97E2B544E29003EC786 /* WidgetKit.framework */; };
+		E7D5B9812B544E29003EC786 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D5B9802B544E29003EC786 /* SwiftUI.framework */; };
+		E7D5B9842B544E29003EC786 /* SKM_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9832B544E29003EC786 /* SKM_widgetBundle.swift */; };
+		E7D5B9882B544E29003EC786 /* SKM_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9872B544E29003EC786 /* SKM_widget.swift */; };
+		E7D5B98A2B544E29003EC786 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9892B544E29003EC786 /* AppIntent.swift */; };
+		E7D5B98C2B544E2B003EC786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D5B98B2B544E2B003EC786 /* Assets.xcassets */; };
+		E7D5B9902B544E2B003EC786 /* SKM-widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E7D5B97C2B544E29003EC786 /* SKM-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7D5B9972B5453BB003EC786 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9762B52BF09003EC786 /* LocationManager.swift */; };
+		E7D5B9992B5453C8003EC786 /* StopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9722B52B456003EC786 /* StopsView.swift */; };
+		E7D5B99A2B546D0B003EC786 /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5B9702B52B13A003EC786 /* RoutesView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7D5B98E2B544E2B003EC786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7D5B9572B52A691003EC786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7D5B97B2B544E29003EC786;
+			remoteInfo = "SKM-widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7D5B9912B544E2B003EC786 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E7D5B9902B544E2B003EC786 /* SKM-widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E7D5B95F2B52A691003EC786 /* SKMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +60,15 @@
 		E7D5B9702B52B13A003EC786 /* RoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesView.swift; sourceTree = "<group>"; };
 		E7D5B9722B52B456003EC786 /* StopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsView.swift; sourceTree = "<group>"; };
 		E7D5B9742B52B680003EC786 /* TimetableForStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableForStop.swift; sourceTree = "<group>"; };
+		E7D5B9762B52BF09003EC786 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E7D5B97C2B544E29003EC786 /* SKM-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SKM-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D5B97E2B544E29003EC786 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E7D5B9802B544E29003EC786 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E7D5B9832B544E29003EC786 /* SKM_widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKM_widgetBundle.swift; sourceTree = "<group>"; };
+		E7D5B9872B544E29003EC786 /* SKM_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKM_widget.swift; sourceTree = "<group>"; };
+		E7D5B9892B544E29003EC786 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		E7D5B98B2B544E2B003EC786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7D5B98D2B544E2B003EC786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,15 +79,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7D5B9792B544E29003EC786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D5B9812B544E29003EC786 /* SwiftUI.framework in Frameworks */,
+				E7D5B97F2B544E29003EC786 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E7D5B9562B52A691003EC786 = {
 			isa = PBXGroup;
 			children = (
-				E7D5B9742B52B680003EC786 /* TimetableForStop.swift */,
+				E7D5B9702B52B13A003EC786 /* RoutesView.swift */,
+				E7D5B9762B52BF09003EC786 /* LocationManager.swift */,
 				E7D5B9722B52B456003EC786 /* StopsView.swift */,
 				E7D5B9612B52A691003EC786 /* SKMApp */,
+				E7D5B9822B544E29003EC786 /* SKM-widget */,
+				E7D5B97D2B544E29003EC786 /* Frameworks */,
 				E7D5B9602B52A691003EC786 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E7D5B95F2B52A691003EC786 /* SKMApp.app */,
+				E7D5B97C2B544E29003EC786 /* SKM-widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,11 +116,11 @@
 		E7D5B9612B52A691003EC786 /* SKMApp */ = {
 			isa = PBXGroup;
 			children = (
+				E7D5B9742B52B680003EC786 /* TimetableForStop.swift */,
 				E7D5B9622B52A691003EC786 /* SKMAppApp.swift */,
 				E7D5B9642B52A691003EC786 /* ContentView.swift */,
 				E7D5B9662B52A692003EC786 /* Assets.xcassets */,
 				E7D5B9682B52A692003EC786 /* Preview Content */,
-				E7D5B9702B52B13A003EC786 /* RoutesView.swift */,
 			);
 			path = SKMApp;
 			sourceTree = "<group>";
@@ -76,6 +133,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E7D5B97D2B544E29003EC786 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7D5B97E2B544E29003EC786 /* WidgetKit.framework */,
+				E7D5B9802B544E29003EC786 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7D5B9822B544E29003EC786 /* SKM-widget */ = {
+			isa = PBXGroup;
+			children = (
+				E7D5B9832B544E29003EC786 /* SKM_widgetBundle.swift */,
+				E7D5B9872B544E29003EC786 /* SKM_widget.swift */,
+				E7D5B9892B544E29003EC786 /* AppIntent.swift */,
+				E7D5B98B2B544E2B003EC786 /* Assets.xcassets */,
+				E7D5B98D2B544E2B003EC786 /* Info.plist */,
+			);
+			path = "SKM-widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,15 +164,34 @@
 				E7D5B95B2B52A691003EC786 /* Sources */,
 				E7D5B95C2B52A691003EC786 /* Frameworks */,
 				E7D5B95D2B52A691003EC786 /* Resources */,
+				E7D5B9912B544E2B003EC786 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E7D5B98F2B544E2B003EC786 /* PBXTargetDependency */,
 			);
 			name = SKMApp;
 			productName = SKMApp;
 			productReference = E7D5B95F2B52A691003EC786 /* SKMApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E7D5B97B2B544E29003EC786 /* SKM-widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7D5B9942B544E2B003EC786 /* Build configuration list for PBXNativeTarget "SKM-widgetExtension" */;
+			buildPhases = (
+				E7D5B9782B544E29003EC786 /* Sources */,
+				E7D5B9792B544E29003EC786 /* Frameworks */,
+				E7D5B97A2B544E29003EC786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SKM-widgetExtension";
+			productName = "SKM-widgetExtension";
+			productReference = E7D5B97C2B544E29003EC786 /* SKM-widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,6 +204,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					E7D5B95E2B52A691003EC786 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					E7D5B97B2B544E29003EC786 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -125,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				E7D5B95E2B52A691003EC786 /* SKMApp */,
+				E7D5B97B2B544E29003EC786 /* SKM-widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +240,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7D5B97A2B544E29003EC786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D5B98C2B544E2B003EC786 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,13 +257,35 @@
 			files = (
 				E7D5B9652B52A691003EC786 /* ContentView.swift in Sources */,
 				E7D5B9752B52B680003EC786 /* TimetableForStop.swift in Sources */,
+				E7D5B9772B52BF09003EC786 /* LocationManager.swift in Sources */,
 				E7D5B9712B52B13A003EC786 /* RoutesView.swift in Sources */,
 				E7D5B9732B52B456003EC786 /* StopsView.swift in Sources */,
 				E7D5B9632B52A691003EC786 /* SKMAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7D5B9782B544E29003EC786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D5B9882B544E29003EC786 /* SKM_widget.swift in Sources */,
+				E7D5B9992B5453C8003EC786 /* StopsView.swift in Sources */,
+				E7D5B9972B5453BB003EC786 /* LocationManager.swift in Sources */,
+				E7D5B98A2B544E29003EC786 /* AppIntent.swift in Sources */,
+				E7D5B99A2B546D0B003EC786 /* RoutesView.swift in Sources */,
+				E7D5B9842B544E29003EC786 /* SKM_widgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7D5B98F2B544E2B003EC786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7D5B97B2B544E29003EC786 /* SKM-widgetExtension */;
+			targetProxy = E7D5B98E2B544E2B003EC786 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E7D5B96B2B52A692003EC786 /* Debug */ = {
@@ -281,6 +412,7 @@
 		E7D5B96E2B52A692003EC786 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +421,7 @@
 				DEVELOPMENT_TEAM = F6U8R86J6P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Share your location for displaying nearest stop on top.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -310,6 +443,7 @@
 		E7D5B96F2B52A692003EC786 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +452,7 @@
 				DEVELOPMENT_TEAM = F6U8R86J6P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Share your location for displaying nearest stop on top.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -330,6 +465,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kapi.SKMApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E7D5B9922B544E2B003EC786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6U8R86J6P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SKM-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SKM-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kapi.SKMApp.SKM-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7D5B9932B544E2B003EC786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6U8R86J6P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SKM-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SKM-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kapi.SKMApp.SKM-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,6 +542,15 @@
 			buildConfigurations = (
 				E7D5B96E2B52A692003EC786 /* Debug */,
 				E7D5B96F2B52A692003EC786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7D5B9942B544E2B003EC786 /* Build configuration list for PBXNativeTarget "SKM-widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7D5B9922B544E2B003EC786 /* Debug */,
+				E7D5B9932B544E2B003EC786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct TimetableForStop: View {
-    let rootUrl = "http://localhost:8800"
+    let rootUrl = "https://skmapp.ledwosinski.space"
     
     @Binding var stopName: String
     @Binding var stopId: String

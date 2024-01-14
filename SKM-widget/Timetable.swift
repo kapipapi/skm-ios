@@ -1,32 +1,27 @@
 //
-//  ContentView.swift
-//  SKMApp
+//  Timetable.swift
+//  SKM-widgetExtension
 //
-//  Created by Kacper Ledwosiński on 13/01/2024.
+//  Created by Kacper Ledwosiński on 14/01/2024.
 //
 
 import SwiftUI
+import WidgetKit
 import CoreLocation
 
-struct ContentView: View {
+struct Timetable: View {
     let rootUrl = "https://skmapp.ledwosinski.space"
     
     @StateObject var stopsView = StopsView()
     @StateObject var locationDataManager = LocationDataManager()
-
+    
     var body: some View {
-        NavigationView{
-            List{
-                ForEach(sortedStops){stop in
-                    NavigationLink(destination: TimetableForStop(stopName: .constant(stop.stop_name), stopId: .constant(stop.stop_id))){
-                        Text(stop.stop_name)
-                    }
-                }
-            }
-            .navigationTitle("Przystanki")
-            .onAppear{
-                stopsView.fetch(root: rootUrl)
-            }
+        VStack{
+            Text(sortedStops.first?.stop_name ?? "loading")
+        }
+        .containerBackground(.fill.tertiary, for: .widget)
+        .onAppear{
+            stopsView.fetch(root: rootUrl)
         }
     }
     
@@ -43,6 +38,9 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
+struct Timetable_Previews: PreviewProvider {
+    static var previews: some View {
+        Timetable()
+            .previewContext(WidgetPreviewContext(family: .systemLarge))
+    }
 }

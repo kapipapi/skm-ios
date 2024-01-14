@@ -39,4 +39,17 @@ class RoutesView: ObservableObject {
         
         task.resume()
     }
+    
+    static func fetchRoutesList(root: String, id: String, n: Int) async throws -> [Route] {
+        let url = URL(string: "\(root)/stop/\(id)/\(n)")!
+
+        let (data, _) = try await URLSession.shared.data(from: url)
+
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .millisecondsSince1970
+
+        let routes = try decoder.decode([Route].self, from: data)
+        
+        return routes
+    }
 }
